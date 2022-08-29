@@ -1,0 +1,15 @@
+details:
+- analysis: variant2
+  genome_build: hg19
+  algorithm:
+    aligner: bwa
+    effects: vep
+    effects_transcripts: all
+    mark_duplicates: true
+    realign: false
+    recalibrate: gatk
+    variantcaller: gatk-haplotype
+    tools_off: [gatk4, gemini] # gatk3.8 will be run, for better precision.
+    tools_on: [qualimap, multiqc]
+upload:
+  dir: ../final
