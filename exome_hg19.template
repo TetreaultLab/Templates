@@ -8,7 +8,8 @@ details:
     mark_duplicates: true
     realign: false
     recalibrate: gatk
-    variantcaller: gatk-haplotype
+    remove_lcr: true
+    variantcaller: [gatk-haplotype, samtools]
     tools_off: [gatk4, gemini] # gatk3.8 will be run, for better precision.
     tools_on: [qualimap, multiqc]
 upload:
