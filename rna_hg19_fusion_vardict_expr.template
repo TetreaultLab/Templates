@@ -1,0 +1,11 @@
+details:
+- analysis: RNA-seq
+  genome_build: hg19
+  algorithm:
+	aligner: star
+	tools_on: [qualimap, multiqc]
+    fusion_caller: [pizzly]
+    variantcaller: [vardict]
+    expression_caller: [express, stringtie, dexseq, salmon] # exon level expression=[dexseq], gene level expression=[salmon, express], transcript level expression=[salmon, StringTie]
+upload:
+  dir: ../final

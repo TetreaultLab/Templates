@@ -1,0 +1,11 @@
+details:
+- analysis: wgbs-seq
+  genome_build: hg19
+  algorithm:
+    aligner: bismark  # this option will set up the same tool for calling and alignment
+  resources:
+    bismark:
+      bismark_threads: 4
+      bowtie_threads: 2
+upload:
+  dir: ../final
