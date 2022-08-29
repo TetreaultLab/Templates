@@ -2,11 +2,11 @@ details:
 - analysis: RNA-seq
   genome_build: hg38
   algorithm:
-	aligner: hisat2
-	tools_on: [qualimap, multiqc]
+    aligner: hisat2
+    tools_on: [qualimap, multiqc]
     fusion_caller: [pizzly]
     variantcaller: [gatk-haplotype]
-	tools_off: [gatk4] # gatk3.8 will be run, for better precision.
+    tools_off: [gatk4] # gatk3.8 will be run, for better precision.
     expression_caller: [express, stringtie, dexseq, salmon] # exon level expression=[dexseq], gene level expression=[salmon, express], transcript level expression=[salmon, StringTie]
 upload:
   dir: ../final
