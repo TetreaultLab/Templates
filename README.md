@@ -7,8 +7,6 @@ Configuration templates for Compute Canada projects
   * Variant calling (gatk/vardict)
   * Expression
 * Exome-seq
-  * Fusion calling
   * Variant calling (gatk/vardict)
-  * Expression
 * Copy number variant (CNV) calling
 * Whole Genome Bisulfite sequencing (WGBS)
