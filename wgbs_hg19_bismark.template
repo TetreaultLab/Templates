@@ -3,6 +3,7 @@ details:
   genome_build: hg19
   algorithm:
     aligner: bismark  # this option will set up the same tool for calling and alignment
+    tools_on: [qualimap, multiqc]
   resources:
     bismark:
       bismark_threads: 4
