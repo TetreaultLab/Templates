@@ -1,0 +1,9 @@
+details:
+  - analysis: variant2
+    genome_build: hg19
+    algorithm:
+      aligner: bwa
+      svcaller: [delly, lumpy, manta, cnvkit]
+      tools_on: [qualimap, multiqc]
+upload:
+  dir: ../final
