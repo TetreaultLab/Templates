@@ -5,5 +5,6 @@ details:
     aligner: bwa
     variantcaller: gatk-haplotype
     tools_off: [gatk4] # gatk3.8 will be run, for better precision.
+    tools_on: [qualimap, multiqc]
 upload:
   dir: ../final
