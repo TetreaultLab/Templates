@@ -1,0 +1,9 @@
+details:
+- analysis: variant2
+  genome_build: hg38
+  algorithm:
+    aligner: bwa
+    variantcaller: gatk-haplotype
+    tools_off: [gatk4] # gatk3.8 will be run, for better precision.
+upload:
+  dir: ../final
